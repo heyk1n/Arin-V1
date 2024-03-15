@@ -1,0 +1,26 @@
+{
+	"fmt": {
+		"indentWidth": 4,
+		"useTabs": true,
+		"semiColons": true
+	},
+	"importMap": "./import_map.json",
+	"lint": {
+		"exclude": [
+			"**/*_test.ts"
+		],
+		"rules": {
+			"include": [
+				"ban-untagged-todo",
+				"camelcase",
+				"no-console"
+			],
+			"tags": [
+				"recommended"
+			]
+		}
+	},
+	"tasks": {
+		"test": "deno run -A --lock-write --watch --env --check main.ts"
+	}
+}
