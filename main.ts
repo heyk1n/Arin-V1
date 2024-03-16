@@ -1,10 +1,7 @@
 import { STATUS_CODE } from "$std/http/status.ts";
 import { validateRequest } from "./utils/validateRequest.ts";
 
-import {
-	InteractionResponseType,
-	InteractionType,
-} from "discord/payloads/v10/_interactions/responses.ts";
+import { InteractionResponseType, InteractionType } from "discord";
 
 async function handler(request: Request): Promise<Response> {
 	const validation = await validateRequest(request);

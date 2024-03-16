@@ -1,5 +1,5 @@
 import { decodeHex } from "$std/encoding/hex.ts";
-import type { APIInteraction } from "discord/payloads/v10/interactions.ts";
+import type { APIInteraction } from "discord";
 import tweetnacl from "npm:tweetnacl@1.0.3";
 
 export async function validateRequest(

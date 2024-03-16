@@ -1,6 +1,6 @@
 {
 	"imports": {
 		"$std/": "https://deno.land/std@0.219.0/",
-		"discord/": "https://deno.land/x/discord_api_types@0.37.73/"
+		"discord": "https://deno.land/x/discord_api_types@0.37.74/v10.ts"
 	}
 }
