@@ -3,6 +3,7 @@
   "packages": {
     "specifiers": {
       "npm:@discordjs/core@1.1.1": "npm:@discordjs/core@1.1.1",
+      "npm:@discordjs/rest@2.2.0": "npm:@discordjs/rest@2.2.0",
       "npm:tweetnacl@1.0.3": "npm:tweetnacl@1.0.3"
     },
     "npm": {

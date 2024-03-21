@@ -21,6 +21,10 @@
 		}
 	},
 	"tasks": {
-		"test": "deno run -A --lock-write --watch --env --check main.ts"
-	}
+		"dev": "deno run --allow-read --allow-run --allow-write --check dev.ts",
+		"test": "deno task dev && deno run --allow-env --allow-net --lock-write --unstable-kv --watch --env --check main.ts"
+	},
+	"unstable": [
+		"kv"
+	]
 }
