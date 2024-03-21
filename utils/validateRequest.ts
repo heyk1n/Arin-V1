@@ -2,6 +2,8 @@ import { decodeHex } from "$std/encoding/hex.ts";
 import type { APIInteraction } from "@discordjs/core";
 import tweetnacl from "npm:tweetnacl@1.0.3";
 
+import type { ValidationResult } from "../types.d.ts";
+
 export async function validateRequest(
 	request: Request,
 ): Promise<ValidationResult> {
@@ -39,8 +41,3 @@ async function verifySignature(request: Request): Promise<ValidationResult> {
 		return { valid, interaction };
 	}
 }
-
-type ValidationResult = { valid: true; interaction: APIInteraction } | {
-	valid: false;
-	error: string;
-};
