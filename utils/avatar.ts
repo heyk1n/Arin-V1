@@ -23,7 +23,7 @@ export function getAvatar(
 	} else if (isUserEntity(entity)) {
 		return getUserAvatar(cdn, entity) ?? getDefaultAvatar(cdn, entity);
 	} else {
-		return cdn.defaultAvatar(0);
+		throw new Error("Invalid entity.");
 	}
 }
 
